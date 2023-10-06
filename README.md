@@ -1,66 +1,13 @@
-## Foundry
+# BetterBools
+Libraries to interact with booleans more efficiently in Solidity.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Currently, there are two libraries implemented:
+- BoolSetLib allows packing 256 booleans into one uint256 variable. It is useful to save a lot of gas on storage slots. Solidity stores just 32 booleans in one slot, so this library increases this number 8 times.
+- LogicalMatrix allows convenient usage of huge boolean value tables (logical matrices).
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+## Installation
+```bash
+forge install Omsify/BetterBools
 ```
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+### Suggestions and contributions are welcome!
