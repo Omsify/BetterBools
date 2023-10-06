@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import {BoolSet} from "./BoolSet.sol";
+import {BoolSetLib} from "./BoolSet.sol";
 
 /*
 * 11011
@@ -16,7 +16,7 @@ struct LogicalMatrix {
 }
 
 library LogicalMatrixLib {
-    using BoolSet for uint256;
+    using BoolSetLib for uint256;
 
     /// @param index is index of a bool in the row `row` from the left.
     function getBoolByRowAndIndex(LogicalMatrix storage matrix, uint256 row, uint256 index) internal view returns (bool) {

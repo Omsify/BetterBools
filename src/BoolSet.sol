@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-library BoolSet {
+library BoolSetLib {
     /**
     * @dev Returns a bool from a bool set at position `offset` from the right.
     */

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import { BoolSet } from "src/BoolSet.sol";
+import { BoolSetLib } from "src/BoolSet.sol";
 
 contract BoolSetExample {
-    using BoolSet for uint256;
+    using BoolSetLib for uint256;
 
     uint256 private boolSet;
 
